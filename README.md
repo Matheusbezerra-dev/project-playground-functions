@@ -414,18 +414,18 @@ Implemente a função <code>catAndMouse</code> que verifica qual gato está mais
   </summary> <br />
 Imagine que dois gatos estão caçando o mesmo rato. Você precisa verificar qual gato está mais perto de sua presa. Para isso, implemente a função `catAndMouse` que recebe 3 parâmetros do tipo `number` na seguinte ordem:
 
+    - `mouse`: representa a posição do rato.
+
     - `cat1`: representa a posição de um dos gatos;
     
     - `cat2`: representa a posição do outro gato ;
-    
-    - `mouse`: representa a posição do rato.
  
  
 - Calcule as distâncias entre o rato e cada um dos gatos e retorne qual dos felinos está mais próximo do rato:
 
    - Retorne a string `'cat2'` se o gato `cat2` estiver mais próximo do rato;
    - Retorne a string `'cat1'` se o gato `cat1` estiver mais próximo do rato;
-   - Retorne a string `'os gatos trombam e o rato foge'` caso os gatos estejam na mesma distância do gato.
+   - Retorne a string `'os gatos trombam e o rato foge'` caso os gatos estejam na mesma distância do rato.
    
 Exemplo:
 
