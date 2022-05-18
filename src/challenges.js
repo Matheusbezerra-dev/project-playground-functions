@@ -43,8 +43,8 @@ function highestCount(numberMax) {
     if (a[i] === numberBigger) {
       sumMax += 1;
     };
-   }; 
-  return(sumMax)
+  };
+  return sumMax
 };
 
 // Desafio 7
