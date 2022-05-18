@@ -10,17 +10,18 @@ function compareTrue(a, b) {
 // Desafio 2
 function calcArea(base, height) {
   return (base * height) / 2;
-}
+};
 
 // Desafio 3
 function splitSentence(frase) {
   return frase.split(' ')
-}
+};
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(nomes) {
+  return nomes[nomes.length-1] + ',' + nomes[0];
+}concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'])
+
 
 // Desafio 5
 function footballPoints() {
