@@ -22,10 +22,11 @@ function concatName(nomes) {
   return nomes[nomes.length - 1] + ', ' + nomes[0];
 }
 
-
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let a = wins;
+  let b = ties;
+  return (a * 3) + (b * 1) + ' pontos';
 }
 
 // Desafio 6
