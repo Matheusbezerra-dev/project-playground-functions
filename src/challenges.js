@@ -20,7 +20,7 @@ function splitSentence(frase) {
 // Desafio 4
 function concatName(nomes) {
   return nomes[nomes.length-1] + ',' + nomes[0];
-}concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'])
+}
 
 
 // Desafio 5
