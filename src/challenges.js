@@ -4,7 +4,7 @@ function compareTrue(a, b) {
     return true;
   } else {
     return false;
-  }
+  };
 };
 
 // Desafio 2
@@ -20,19 +20,29 @@ function splitSentence(frase) {
 // Desafio 4
 function concatName(nomes) {
   return nomes[nomes.length - 1] + ', ' + nomes[0];
-}
+};
 
 // Desafio 5
 function footballPoints(wins, ties) {
   let a = wins;
   let b = ties;
   return (a * 3) + (b * 1);
-}
+};
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
-}
+function highestCount(numberMax) {
+  let a = numberMax;
+  let numberBigger = 0;
+  let sumMax = 0;
+  for (let i = 0; i < a.length; i += 1) {
+    if (a[i] >= numberBigger) {
+      numberBigger = a[i]
+      if (numberBigger === a[i]) {
+        sumMax += 1
+      };
+    };
+  }; return sumMax
+};
 
 // Desafio 7
 function catAndMouse() {
