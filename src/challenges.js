@@ -26,7 +26,7 @@ function concatName(nomes) {
 function footballPoints(wins, ties) {
   let a = wins;
   let b = ties;
-  return (a * 3) + (b * 1) + ' pontos';
+  return (a * 3) + (b * 1);
 }
 
 // Desafio 6
