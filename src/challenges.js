@@ -60,22 +60,20 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-// function fizzBuzz(a) {
-//   let string = [];
-//   for (let i of a){
-//     if(i % 3 === 0 && i % 5 === 0);{
-//       string.push('fizzBuzz');
-//     }else if(i % 3 === 0){
-//       string.push('fizz');
-//     }else if(i % 5 === 0){
-//       string.push('buzz');
-//     }else if{
-//       string.push('bug!');
-//     };
-//     return string
-//   };
-    
-// };
+function fizzBuzz(div) {
+  let returnstring = [];
+  for (let number of div){
+    if (number % 3 === 0 && number % 5 === 0){
+      returnstring.push('fizzBuzz');
+    }else if (number % 3 === 0) {
+      returnstring.push('fizz');
+    }else if (number % 5 === 0) {
+      returnstring.push('buzz');
+    }else {
+      returnstring.push('bug!');
+    };
+  };return returnstring;    
+};
 
 
 // Desafio 9
@@ -88,10 +86,8 @@ function decode() {
 
 // Desafio 10
 function techList(a, s) {
-
   let objeto = [];
   a.sort();
-
   for (let i = 0; i < a.length; i += 1) {
     let objeto1 = {};
     objeto1.tech = a[i];
