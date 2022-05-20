@@ -47,14 +47,35 @@ function highestCount(numberMax) {
 };
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
+    return 'cat1';
+  } else if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)) {
+    return 'cat2';
+  } else if (Math.abs(cat1 - mouse) === Math.abs(cat2 - mouse)) {
+    return 'os gatos trombam e o rato foge';
+  }
+
+
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+function fizzBuzz(a) {
+  let string = [];
+  for (let i of a) {
+    if (i % 3 === 0 && i % 5 === 0); {
+      string.push('fizzBuzz');
+    } else if (i % 3 === 0) {
+      string.push('fizz');
+    } else if (i % 5 === 0) {
+      string.push('buzz');
+    } else {
+      string.push('bug!');
+    };
+    return string
+  };
+
+};
 
 // Desafio 9
 function encode() {
@@ -65,9 +86,23 @@ function decode() {
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
-}
+function techList(a, s) {
+
+  let objeto = [];
+  a.sort();
+
+  for (let i = 0; i < a.length; i += 1) {
+    let objeto1 = {};
+    objeto1.tech = a[i];
+    objeto1.name = s;
+    objeto.push(objeto1);
+  }; if (a < 1) {
+    return "Vazio!"
+  } else {
+    return objeto
+  };
+
+};
 
 module.exports = {
   calcArea,
