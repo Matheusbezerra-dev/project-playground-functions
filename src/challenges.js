@@ -62,27 +62,57 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(div) {
   let returnstring = [];
-  for (let number of div){
-    if (number % 3 === 0 && number % 5 === 0){
+  for (let number of div) {
+    if (number % 3 === 0 && number % 5 === 0) {
       returnstring.push('fizzBuzz');
-    }else if (number % 3 === 0) {
+    } else if (number % 3 === 0) {
       returnstring.push('fizz');
-    }else if (number % 5 === 0) {
+    } else if (number % 5 === 0) {
       returnstring.push('buzz');
-    }else {
+    } else {
       returnstring.push('bug!');
     };
-  };return returnstring;    
+  }; return returnstring;
 };
 
 
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
+function encode(text) {
+  let codificado = '';
+  for (let letter of text) {
+    if (letter === 'a') {
+      codificado += '1';
+    } else if (letter === 'e') {
+      codificado += '2';
+    } else if (letter === 'i') {
+      codificado += '3';
+    } else if (letter === 'o') {
+      codificado += '4';
+    } else if (letter === 'u') {
+      codificado += '5';
+    } else {
+      codificado += letter
+    };
+  } return codificado;
+};
+function decode(text2) {
+  let decodificado = '';
+  for (let numb of text2) {
+    if (numb === '1') {
+      decodificado += 'a';
+    } else if (numb === '2') {
+      decodificado += 'e';
+    } else if (numb === '3') {
+      decodificado += 'i';
+    } else if (numb === '4') {
+      decodificado += 'o';
+    } else if (numb === '5') {
+      decodificado += 'u';
+    } else {
+      decodificado += numb;
+    };
+  }; return decodificado
+};
 
 // Desafio 10
 function techList(a, s) {
